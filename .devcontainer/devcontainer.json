@@ -8,7 +8,7 @@
   "portsAttributes": {
     "3000": { "label": "Next.js", "onAutoForward": "notify" }
   },
-  "postCreateCommand": "[ -f package.json ] && npm install || true",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
   "customizations": {
     "vscode": {
       "extensions": [
